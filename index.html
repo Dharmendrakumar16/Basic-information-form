@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic information form</title>
+    <style>
+        h1{color: rgb(12, 8, 7);
+        background-color:rgb(159, 159, 212);
+        text-align: center;
+        border: 4px solid;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(129, 99, 99);
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #090231;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 48px;
+  cursor: pointer;
+  float: right;
+  margin-left: 10px;
+  
+  
+}
+
+input[type=submit]:hover {
+  background-color: #0f0353;
+}
+input[type=reset] {
+  background-color: #090231;
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 48px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=reset]:hover {
+  background-color: #0f0353;
+}
+        .box {
+            border: 4px solid;
+            background-color: rgb(202, 206, 211);
+            padding: 10px;
+
+        }
+        .container{
+            border: 6px solid;
+            background-color: rgb(198, 226, 218);
+            padding: 5px;
+            width: 650px;
+            margin: auto;
+        }
+        .column-1{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .column-2{
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width : 600px) {
+            .column-1, .column-2, input[type=submit], input[type=reset]{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Form of collecting basic details about you</u></h1>
+        <div class="box">
+            <form action="Press_Link_To_Open_The_Pages_Of_Website.html">
+                 <div class="row">
+                    <div class="column-1">
+                        <label for="Name"><strong>Name</strong></label>
+                    </div>
+                        <div class="column-2">
+                            <input type="text"name="My Name" id="Name" placeholder="Your name......">
+                        </div>
+                 </div><br>  
+                <div class="row">
+                    <div class="column-1">
+                        <label for="Father's Name"><strong>Father's Name</strong></label>
+                    </div>
+                    <div class="column-2">
+                        <input type="text" name="My Father Name" id="Father's Name" placeholder="Your father name.......">
+                    </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Mother's Name"><strong>Mother's Name</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="My Mother Name" id="Mother's Name" placeholder="Your mother name......">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Date Of Birth"><strong>Date Of Birth</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="date" name="My Date Of Birth" id="Date Of Birth">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Age"><strong>Age</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="My age is" id="Age" placeholder="Your age......">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Gender"><strong>Gender</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="Radio" name="My Gender" id="Gender">Male <input type="Radio" name="My Gender" id="Gender">Female <input type="Radio" name="My Gender" id="Gender">Other 
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Which Class Do You Study In"><strong>Which Class Do You Study In</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <select name="I am study in this Class" id="Which Class Do You Study In">
+                                <option hidden>
+                                <option value="11th">11th</option>
+                                <option value="12th">12th</option>
+                                <option value="UG">UG</option>
+                                <option value="PG">PG</option>
+                                </option hidden>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Where do you belong?"><strong>Where do you belong?</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="I belong to" id="Where do you belong?" placeholder="Your belong city or state......">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Where do you live?"><strong>Where do you live?</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="I live in" id="Where do you live?" placeholder="Your living city or state.....">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Hobbies"><strong>Hobbies</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="My hobbies is" id="Hobbies" placeholder="Your hobbies.....">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Current address"><strong>Current address</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="My address" id="Current address" placeholder="Your current address.......">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Contact number"><strong>Contact number</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="number" name="My contact number" id="Contact number" placeholder="Your contect number......">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="column-1">
+                            <label for="Mail id"><strong>Mail id</strong></label>
+                        </div>
+                        <div class="column-2">
+                            <input type="text" name="My mail id is" id="Mail id" placeholder="Your mail id.....">
+                        </div>
+                    </div><br>
+                    <div class="row">
+                            <input type="submit" value="Submit Now">
+                            <input type="reset" value="Reset Now">
+                    </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
